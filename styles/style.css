@@ -16,6 +16,7 @@
   align-items: center;
   font-family: var(--font-main);
   font-size: 18px;
+  font-variation-settings: 'wght' 400;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-color: var(--color-bg);
@@ -44,6 +45,7 @@
   inline-size: min(100vw, 700px);
   background-color: var(--color-bg);
   border: var(--border-line);
+  font-variation-settings: 'wght' 700;
 }
 
 .logo {
@@ -78,6 +80,7 @@
   gap: 27px;
   padding-inline: 25px;
   padding-block: 25px 24px;
+  font-variation-settings: 'wght' 400;
 }
 
 .article-text:last-of-type {
@@ -249,18 +252,18 @@
   padding-block: 30px;
 }
 
-.dialog-window[open]::backdrop { 
-  background-color: #000; 
-  filter: opacity(0.75); 
-} 
+.dialog-window[open]::backdrop {
+  background-color: #000;
+  filter: opacity(0.75);
+}
 
 .dialog-content {
-  display: flex; 
+  display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.dialog-window svg { 
+.dialog-window svg {
   block-size: 2.44rem;
 }
 
