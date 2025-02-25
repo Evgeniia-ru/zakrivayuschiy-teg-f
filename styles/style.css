@@ -234,8 +234,6 @@
 }
 
 .save-button svg {
-  position: relative;
-  z-index: 1;
   color: var(--button-text-color);
   mix-blend-mode: difference;
   inline-size: 21px;
@@ -243,7 +241,7 @@
   fill: #fff;
 }
 
-.dialog-content svg {
+.floppy-image-dialog {
   inline-size: 39px;
   block-size: 39px;
 }
@@ -278,7 +276,7 @@
 
 .dialog__button {
   grid-column: 1/3;
-  block-size: 39px;
+  block-size: 38px;
   inline-size: 100%;
 }
 
