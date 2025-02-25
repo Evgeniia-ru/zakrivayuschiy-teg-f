@@ -270,10 +270,6 @@
   gap: 20px;
 }
 
-.dialog-window svg {
-  block-size: 2.44rem;
-}
-
 .dialog__title {
   font-family: var(--font-accent);
   font-size: 14px;
