@@ -228,22 +228,18 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   align-items: center;
+  margin-block-end: 103px;
   gap: 8px;
   padding:18px 21px;
-  margin-block-end: 103px;
+  
 }
 
 .save-button svg {
-  color: var(--button-text-color);
   mix-blend-mode: difference;
+  color: var(--button-text-color);
   inline-size: 21px;
   block-size: 21px;
   fill: #fff;
-}
-
-.floppy-image-dialog {
-  inline-size: 39px;
-  block-size: 39px;
 }
 
 .dialog-window[open] {
@@ -259,6 +255,11 @@
 .dialog-window[open]::backdrop {
   background-color: #000;
   filter: opacity(0.75);
+}
+
+.floppy-image-dialog {
+  inline-size: 39px;
+  block-size: 39px;
 }
 
 .dialog-content {
