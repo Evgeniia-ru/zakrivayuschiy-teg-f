@@ -243,7 +243,7 @@
   fill: #fff;
 }
 
-.floppy-image-dialog {
+.dialog-content svg {
   inline-size: 39px;
   block-size: 39px;
 }
@@ -253,7 +253,7 @@
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   gap: 30px;
-  max-width: clamp(341px, 100%, 357px);
+  inline-size: clamp(21.313rem, 21.05rem + 1.127vw, 22.06rem);
   border: var(--border-line);
   padding-inline: clamp(30px, calc(30px + (10 * ((1440px - 100vw) / 1065))), 40px);
   padding-block: 30px;
