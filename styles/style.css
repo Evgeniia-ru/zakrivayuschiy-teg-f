@@ -221,97 +221,33 @@
 }
 
 /*СОХРАНЯШКА*/
-/*
-.save {
-  padding-block: 50px 105px;
-}
-
-.save-button {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  align-items: center;
-  margin-block-end: 103px;
-  gap: 8px;
-  padding:18px 21px;
-  
-}
-
-.save-button svg {
-  mix-blend-mode: difference;
-  color: var(--button-text-color);
-  inline-size: 21px;
-  block-size: 21px;
-  fill: #fff;
-}
-
-.dialog-window[open] {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
-  padding: 30px;
-  gap: 20px;
-  border: var(--border-line);
-}
-
-.dialog-window[open]::backdrop {
-  background-color: #000;
-  filter: opacity(0.75);
-}
-
-.floppy-image-dialog {
-  inline-size: 39px;
-  block-size: 39px;
-}
-
-.dialog-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.dialog__title {
-  font-family: var(--font-accent);
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
-.dialog__button {
-  grid-column: 1/3;
-  block-size: 38px;
-  inline-size: 100%;
-}
-*/
-
 
 .save {
   display: flex;
   justify-content: center;
-  margin: 50px auto 63px;
   inline-size: clamp(375px, calc(100vw - 51.3989vh), 700px);
+  margin: 50px auto 63px;
 }
 
 .floppy-image {
+  mix-blend-mode: difference;
+  z-index: 2;
   inline-size: 21px;
   block-size: 21px;
   color: var(--button-text-color);
-  mix-blend-mode: difference;
-  z-index: 2;
 }
-
 
 .save-button {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  position: relative;
+  flex-wrap: wrap;
   min-inline-size: 335px;
   min-block-size: 51px;
   background-color: var(--color-bg);
-  gap: 8px;
   cursor: pointer;
-  position: relative;
 }
 
 .save-button:hover::before {
@@ -335,7 +271,7 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.modal__floppy-container {
+.floppy-image-dialog {
   grid-column: 1 / 1;
   grid-row: 1/ 1;
   inline-size: 39px;
@@ -343,7 +279,7 @@
   align-self: center;
 }
 
-.modal-close-button-text {
+.dialog__title {
   text-transform: uppercase;
   line-height: 1.3125em;
   grid-row: 1 / 1;

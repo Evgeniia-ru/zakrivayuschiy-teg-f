@@ -348,27 +348,6 @@
         </div>
       </article>
     </main>
-  <!--
-    <div class="save">
-      <button class="button save-button" type="button" onclick="window['dialog'].showModal()" aria-controls="dialog"> 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="currentColor" class="floppy-image">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </div>
-    <dialog id="dialog" class="dialog-window">
-      <div class="dialog-content">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="currentColor" class="floppy-image floppy-image-dialog">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <p class="dialog__title">Вставьте дискету, чтобы продолжить</p>
-      </div>
-      <button type="button" class="button dialog__button" onclick="window['dialog'].close()">
-        <span class="button__text">ОК</span>          
-      </button>
-    </dialog>
--->
 
 <div class="save">
   <button type="button" class="save-button button" onclick="window.dialog.showModal()">
@@ -378,10 +357,10 @@
     <span class="button__text">Сохранить на память</span>
   </button>
   <dialog class="dialog-window" id="dialog">
-    <svg viewBox="0 0 39 39" class="modal__floppy-container">
+    <svg viewBox="0 0 39 39" class="floppy-image-dialog">
       <use href="svg/floppy.svg#floppy" />
     </svg>
-    <p class="modal-close-button-text button__text">
+    <p class="dialog__title button__text">
       вставьте дискету, чтобы продолжить
     </p>
     <button type="button" class="button dialog__button" onclick="window.dialog.close()">
