@@ -371,21 +371,21 @@
 -->
 
 <div class="save">
-  <button type="button" class="save-dialog-button-container before-button button" onclick="window.floppyDisk.showModal()">
-    <svg viewBox="0 0 39 39" class="floppy-container">
+  <button type="button" class="save-button button" onclick="window.floppyDisk.showModal()">
+    <svg viewBox="0 0 39 39" class="floppy-image">
       <use href="svg/floppy.svg#floppy" />
     </svg>
-    <span class="button-text">Сохранить на память</span>
+    <span class="button__text">Сохранить на память</span>
   </button>
   <dialog class="modal-window-container" id="floppyDisk">
     <svg viewBox="0 0 39 39" class="modal__floppy-container">
       <use href="svg/floppy.svg#floppy" />
     </svg>
-    <p class="modal-close-button-text button-text">
+    <p class="modal-close-button-text button__text">
       вставьте дискету, чтобы продолжить
     </p>
-    <button type="button" class="modal-close-button button" onclick="window.floppyDisk.close()">
-      <span class="button-text">ок</span>
+    <button type="button" class="button dialog__button" onclick="window.floppyDisk.close()">
+      <span class="button__text">ок</span>
     </button>
   </dialog>
 </div>
