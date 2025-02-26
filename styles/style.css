@@ -298,20 +298,6 @@
   block-size: 38px;
 }
 
-.dialog__button::before {
-  content:"";
-  position: absolute;
-  z-index: 1;
-  min-inline-size: 100%;
-  min-block-size: 100%;
-  top: 0;
-  left: 0;
-  background-color: black;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s;
-}
-
 .dialog__button:hover::before {
   transform: scaleX(1);
 }
@@ -361,5 +347,11 @@
   .floppy-image {
     inline-size: 28px;
     block-size: 28px;
+  }
+
+  .save {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
   }
 }
