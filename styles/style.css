@@ -288,8 +288,7 @@
 .save {
   display: flex;
   justify-content: center;
-  background-color: inherit;
-  margin: 0 auto 63px;
+  margin: 50px auto 63px;
   inline-size: clamp(375px, calc(100vw - 51.3989vh), 700px);
 }
 
@@ -319,7 +318,7 @@
   transform: scaleX(1);
 }
 
-.modal-window-container {
+.dialog-window {
   justify-content: space-between;
   grid-template-columns: 39px 1fr;
   grid-template-rows: auto auto;
@@ -328,11 +327,11 @@
   padding: 30px;
 }
 
-.modal-window-container[open] {
+.dialog-window[open] {
   display: grid;
 }
 
-.modal-window-container::backdrop {
+.dialog-window::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
