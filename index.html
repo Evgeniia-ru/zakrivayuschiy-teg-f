@@ -348,7 +348,7 @@
         </div>
       </article>
     </main>
-
+  <!--
     <div class="save">
       <button class="button save-button" type="button" onclick="window['dialog'].showModal()" aria-controls="dialog"> 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="currentColor" class="floppy-image">
@@ -365,9 +365,29 @@
         <p class="dialog__title">Вставьте дискету, чтобы продолжить</p>
       </div>
       <button type="button" class="button dialog__button" onclick="window['dialog'].close()">
-        <span class="button__text">Ок</span>          
+        <span class="button__text">ОК</span>          
       </button>
     </dialog>
+-->
+
+<button class="floppy-button page__text" type="button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
+<svg class="icon-button" viewBox="0 0 42 42">
+  <use href="./svg/floppy.svg#floppy" />
+</svg>
+<span class="button__text">Сохранить на память</span>
+</button>
+<dialog id="dialog-id" class="dialog">
+
+<div class="dialog-wrapper">
+<svg class="icon-button-close">
+<use href="./svg/floppy.svg#floppy" />
+</svg>
+<h2 class="dialog-text">Вставьте дискету, чтобы продолжить</h2>
+</div>
+<button class="close-button page__text" type="button" onclick="window['dialog-id'].close();" >
+ok
+</button>
+</dialog>
 
     <script src="./scripts/like.js"></script>
   </body>
