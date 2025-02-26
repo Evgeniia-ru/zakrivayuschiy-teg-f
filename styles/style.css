@@ -285,7 +285,7 @@
 */
 
 
-.save-dialog-container {
+.save {
   display: flex;
   justify-content: center;
   background-color: inherit;
