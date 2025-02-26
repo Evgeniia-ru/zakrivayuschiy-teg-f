@@ -370,24 +370,25 @@
     </dialog>
 -->
 
-<button class="floppy-button page__text" type="button" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id">
-<svg class="icon-button" viewBox="0 0 42 42">
-  <use href="./svg/floppy.svg#floppy" />
-</svg>
-<span class="button__text">Сохранить на память</span>
-</button>
-<dialog id="dialog-id" class="dialog">
-
-<div class="dialog-wrapper">
-<svg class="icon-button-close">
-<use href="./svg/floppy.svg#floppy" />
-</svg>
-<h2 class="dialog-text">Вставьте дискету, чтобы продолжить</h2>
+<div class="save-dialog-container">
+  <button type="button" class="save-dialog-button-container before-button button-focus" onclick="window.floppyDisk.showModal()">
+    <svg viewBox="0 0 39 39" class="floppy-container">
+      <use href="svg/floppy.svg#floppy" />
+    </svg>
+    <span class="button-text">Сохранить на память</span>
+  </button>
+  <dialog class="modal-window-container" id="floppyDisk">
+    <svg viewBox="0 0 39 39" class="modal__floppy-container">
+      <use href="svg/floppy.svg#floppy" />
+    </svg>
+    <p class="modal-close-button-text button-text">
+      вставьте дискету, чтобы продолжить
+    </p>
+    <button type="button" class="modal-close-button button-focus" onclick="window.floppyDisk.close()">
+      <span class="button-text">ок</span>
+    </button>
+  </dialog>
 </div>
-<button class="close-button page__text" type="button" onclick="window['dialog-id'].close();" >
-ok
-</button>
-</dialog>
 
     <script src="./scripts/like.js"></script>
   </body>
