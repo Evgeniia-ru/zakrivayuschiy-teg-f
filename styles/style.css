@@ -226,7 +226,7 @@
   display: flex;
   justify-content: center;
   inline-size: clamp(375px, calc(100vw - 51.3989vh), 700px);
-  margin: 50px auto 63px;
+  margin: 50px auto 105px;
 }
 
 .floppy-image {
@@ -339,7 +339,7 @@
 
 @media (width <= 375px) {
   .save-button {
-    grid-template-columns: repeat(1, auto);
+    
     justify-content: center;
     justify-items: center;
   }
@@ -347,11 +347,5 @@
   .floppy-image {
     inline-size: 28px;
     block-size: 28px;
-  }
-
-  .save {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
   }
 }
