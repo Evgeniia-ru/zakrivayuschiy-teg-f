@@ -339,9 +339,9 @@
 
 @media (width <= 375px) {
   .save-button {
-    
-    justify-content: center;
-    justify-items: center;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 8px;
   }
 
   .floppy-image {
